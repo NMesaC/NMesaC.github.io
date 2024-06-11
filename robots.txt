@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://NMesaC.github.io/al-folio/sitemap.xml
+Sitemap: https://NMesaC.github.io/sitemap.xml
