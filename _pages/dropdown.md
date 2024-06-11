@@ -1,16 +1,16 @@
----
+<!-- ---
 layout: page
 title: gatos mishi
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: gato
+  - title: publications
     permalink: /publications/
-  - title: rrrr
-  - title: rawr
+  - title: divider
+  - title: projects
     permalink: /projects/
-  - title: rrrr
-  - title: woof
+  - title: divider
+  - title: blog
     permalink: /blog/
----
+--- -->
