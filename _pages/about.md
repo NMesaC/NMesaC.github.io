@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: ECE Undergrad at CMU. Currently located in Pittsburgh, PA, USA.
 
