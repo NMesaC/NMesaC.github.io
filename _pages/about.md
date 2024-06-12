@@ -2,23 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: ECE Undergrad at CMU. Currently located in Pittsburgh, PA, USA.
 
 profile:
   align: right
   image: smt.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Carnegie Mellon University</p>
-    <p>5532 Kentucky Ave</p>
-    <p>Pittsburgh, PA 15232</p>
+  # more_info: >
+  #   <p>Carnegie Mellon University</p>
+  #   <p>5532 Kentucky Ave</p>
+  #   <p>Pittsburgh, PA 15232</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
-ECE Undergrad at CMU. Currently located in Pittsburgh, PA, USA.
 
 Hi there! My name is Nicholas Mesa-Cucalon, but I usually go by Nico. I am currently an Electrical and Computer Engineering senior with a focus on Machine Learning at Carnegie Mellon University, and I expect to graduate with a B.S. in 2025.
 
@@ -27,8 +25,6 @@ During Summer 2023, I had the privilege of interning at Voaige where I worked on
 My interests currently lie in Multimodal Machine Learning, Generative AI and Personalizable AI. Specifically, I believe that as our understanding and ability to deploy multimodal models improves, we should leverage these technologies to provide people better user experiences and more flexible options for AI choice.
 Many useful AI systems are set up so people have to change their workflows to use them, as opposed to having them either integrated (by their choice) into their workflows or easier to use in their workflows. I aim to understand and develop frameworks that will give more power to users in deciding specific model or architecture choices in a larger system, and overall give more power to the user when using AI models.
 
-In my free time, I go to the gym, listen to J-Pop, read manga and play single player games. My favorite artist is Zutomayo, my favorite manga is Bluelock, and my favorite game series are Shin Megami Tensei and Pokémon. I enjoy travelling with either my friends or family whenever I can. My favorite places I've visited have been Japan and Spain!
+In my free time, I go to the gym, listen to J-Pop, read Manga and play Single Player Games. My favorite artist is Zutomayo, my favorite Manga is Bluelock, and my favorite game series are Shin Megami Tensei and Pokémon. I enjoy travelling with either my friends or family whenever I can. My favorite places I've visited have been Japan and Spain!
 
-I'm fluent in Spanish, and have family in Ecuador, Colombia, Mexico and Miami, Florida, where I grew up.
-
-I decided to start this website in June 2024 for the purpose of better organizing my ideas and projects as I learn more about Machine Learning and AI. I hope that my blog, paper reviews and projects can help popularize certain ideas in Multimodal ML, or help others understand different emerging technologies in the field. I also publish my blog posts and paper reviews to Medium. I also want to credit Fan Pu Zeng for his website, from which I drew inspiration in format from.
+I decided to start this website in June 2024 for the purpose of better organizing my ideas and projects as I learn more about Machine Learning and AI. I hope that my blog, paper reviews and projects can help popularize certain ideas in Multimodal ML, or help others understand different emerging technologies in the field. I also publish my blog posts and paper reviews to Medium. I also want to credit Fan Pu Zeng for his website, from which I drew inspiration from.
