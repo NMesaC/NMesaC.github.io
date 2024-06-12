@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: A selection of Projects I have worked on!
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+# display_categories: [work, fun]
 horizontal: false
 ---
 

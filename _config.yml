@@ -129,8 +129,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Nico's Blog # blog_name will be displayed in your blog page
-blog_description: A blog dedicated to thoughts and ideas in Multimodal ML and AI, as well as general topics related to my interests.
+blog_name: A Multimodal Journey # blog_name will be displayed in your blog page
+blog_description: A blog dedicated to thoughts and ideas in Multimodal ML, Generative AI, General ML and general topics related to my interests.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -327,7 +327,7 @@ scholar:
 enable_publication_badges:
   altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
   dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
