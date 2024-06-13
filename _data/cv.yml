@@ -51,9 +51,7 @@
     - name: AI/ML
       value: Introduction to Machine Learning, Convex Optimization, Computer Vision, (Completed by 2025) Generative AI, Multimodal Machine Learning
     - name: CS/ECE
-      value: Parallel and Sequential Data Structures and Algorithms, Distributed Systems, Computer Systems and the Hardware-Software Interface, Introduction to Computer Security
-    - name: Ethics
-      value: Ethics and Policy Issues in Computing 
+      value: Parallel and Sequential Data Structures and Algorithms, Distributed Systems, Computer Systems and the Hardware-Software Interface, Introduction to Computer Security, Ethics and Policy Issues in Computing 
 
 - title: Skills
   type: map
