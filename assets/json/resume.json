@@ -4,7 +4,7 @@
     "label": "Student",
     "image": "",
     "email": "nmesacuc@andrew.cmu.edu",
-    "phone": "(786) 483 4376",
+    "phone": "(786) 483-4376",
     "url": "https://nmesac.github.io/",
     "summary": "An ECE Undergrad at CMU interested in Multimodal ML and Generative AI",
     "location": {
@@ -13,21 +13,14 @@
       "city": "Pittsburgh",
       "countryCode": "US",
       "region": "Pennsylvania"
-    },
-    "profiles": [
-      {
-        "network": "Medium",
-        "username": "nmesac1019",
-        "url": "https://nmesac1019.medium.com/"
-      }
-    ]
+    }
   },
   "work": [
     {
       "name": "Carnegie Mellon University's College of Engineering",
       "position": "Teaching Assistant - 18-213 Introduction to Computer Systems",
-      "startDate": "05-19-2024",
-      "endDate": "08-02-2024",
+      "startDate": "2024-19-05",
+      "endDate": "2024-02-08",
       "summary": "Led small group meetings to refresh the topics covered in lecture. Held office hours to provide individual assistance to students on high level concepts for homework.",
       "highlights": ["Teaching", "Computer Systems"]
     },
@@ -35,8 +28,8 @@
       "name": "Voaige",
       "position": "Robotics and Perception Intern",
       "url": "https://voaige.com/",
-      "startDate": "05-22-2023",
-      "endDate": "08-18-2023",
+      "startDate": "2023-22-05",
+      "endDate": "2023-18-08",
       "summary": "Developed and deployed production level code for Delta Robot calibration. Produced a program and documentation for performing Hand-Eye-Calibration using OpenCV. Researched and documented papers on Point Cloud Registration.",
       "highlights": ["Robotics", "OpenCV", "Hand Eye Calibration", "Delta Robot Calibration", "Point Cloud Registration"]
     },
@@ -44,8 +37,8 @@
       "name": "Carnegie Mellon University Robotics Institute",
       "position": "Research Assistant",
       "url": "https://theairlab.org/",
-      "startDate": "08-01-2022",
-      "endDate": "01-17-2023",
+      "startDate": "2022-01-08",
+      "endDate": "2023-17-01",
       "summary": "Authored script to help generate novel test patterns for research. Synthesized and devised action plan for novel Camera Models for fish eye lens. Collaborated with two other undergraduate students to expand on an existing paper.",
       "highlights": ["Research", "Camera Calibration"]
     }
@@ -58,7 +51,8 @@
       "description": "Implemented a single hidden layer RNN and a Transformer Encoder model in PyTorch.",
       "highlights": [
         "Achieved 85% accuracy when performing sentiment analysis on the IMDb dataset."
-      ]
+      ],
+      "url": ""
     },
     {
       "name": "Optical Flow Video Tracker",
@@ -67,13 +61,18 @@
       "description": "Implemented Lucas-Kanade and Inverse Affine optical flow algorithms.",
       "highlights": [
         "Scripts track objects in 30FPS videos with 90% accuracy."
-      ]
+      ],
+      "url": ""
     },
     {
       "name": "Malloc Lab",
       "startDate": "06-20-2021",
       "endDate": "07-08-2021",
-      "description": "Implemented a dynamic storage allocator (heap memory management and allocation) in C. Optimized allocator for memory utilization and throughput by using data structures such as segregated lists and best-fit search algorithms."
+      "description": "Implemented a dynamic storage allocator (heap memory management and allocation) in C. Optimized allocator for memory utilization and throughput by using data structures such as segregated lists and best-fit search algorithms.",
+      "highlights": [
+        "Reached an average memory utilization of 74.1% and throughput of 8687 Kops/sec"
+      ],
+      "url": ""
     }
   ],
   "education": [
@@ -86,7 +85,7 @@
       "startDate": "08-01-2021",
       "endDate": "05-31-2025",
       "score": "3.73",
-      "courses": ["Introduction to Machine Learning, Convex Optimization, Computer Vision, Distributed Systems, Parallel and Sequential Data Structures and Algorithms", "(Completed by 2025)", "Generative AI", "Multimodal ML"]
+      "courses": ["Introduction to Machine Learning", "Convex Optimization", "Computer Vision", "Distributed Systems", "Parallel and Sequential Data Structures and Algorithms", "(Completed by 2025) Generative AI, Multimodal Machine Learning"]
     }
   ],
   "skills": [
