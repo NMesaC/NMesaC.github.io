@@ -1,5 +1,5 @@
 ---
-layout: summary
+layout: post
 title: "Grounding Language Models to Images for Multimodal Inputs and Outputs"
 giscus_comments: true
 tags: machine-learning, computer-science
