@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: summary
 title: "Grounding Language Models to Images for Multimodal Inputs and Outputs"
 tags: machine-learning, computer-science
 categories: paper-reviews
+bib_id: 2301.13823v4
 ---
 
 ### Overview
