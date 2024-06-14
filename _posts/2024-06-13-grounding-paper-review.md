@@ -25,7 +25,7 @@ The authors note that current Large Language Models are grounded in the language
 This paper introduces the FROMAGe model. The FROMAGe model works by taking an existing LLM and Visual Encoder, freezing their parameters, and learning transformations between image and text embedding spaces to perform image $\rightarrow$ text and text $\rightarrow$ image transformations. FROMAGe was designed for image captioning and image retrieval, and does these steps separately. It should be noted that this is possible since a previous paper, LIMBeR, found that learnt representations of vision and language models are equivalent up to a linear transformation, which can be learned as a linear layer.
 
 {% include figure.liquid
-    path="/assets/img/image_captioning.webp"
+    path="/assets/img/image_captioning.jpg"
     width="600px"
     class="z-depth-1"
 %}
@@ -33,7 +33,7 @@ This paper introduces the FROMAGe model. The FROMAGe model works by taking an ex
 For Image Captioning, FROMAGe learns a single linear layer called $W_C$ that serves to translate the output of the visual encoder into a token that is then prepended to the caption text corresponding to the image. This lines up with previous work on image captioning, which generates text tokens conditioned on a visual prefix. The standard log likelihood loss is used to learn the linear layer.
 
 {% include figure.liquid
-    path="/assets/img/image_text_retrieval.webp"
+    path="/assets/img/image_text_retrieval.jpg"
     width="600px"
     class="z-depth-1"
 %}
@@ -49,13 +49,13 @@ Recall at K is a metric that measures, given K recommendations from the model, t
 Further experiments show that FROMAGe performs well in visual dialogue tasks and in general, effectively leverages the visual data that it has access to that other LLM or mixed-modality models do not effectively use. FROMAGe, when provided with both more visual and text input, increases its recall at 1 (R @ 1) measure, which indicates that it does better at finding the most relevant answer from the given dataset (Visual Storytelling dataset).
 
 {% include figure.liquid
-    path="/assets/img/model_exp_1.webp"
+    path="/assets/img/model_exp_1.jpg"
     width="600px"
     class="z-depth-1"
 %}
 
 {% include figure.liquid
-    path="/assets/img/model_exp_2.webp"
+    path="/assets/img/model_exp_2.jpg"
     width="600px"
     class="z-depth-1"
 %}
