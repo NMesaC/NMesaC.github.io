@@ -9,6 +9,8 @@ nav_order: 5
 
 Summaries and critiques of papers relating to Machine Learning, usually Multimodal ML and Generative AI. I'm writing these summaries as a way of having an easy reference to past papers I've wrote and to (hopefully) expose people to some of the papers and ideas I find interesting. The summaries will be short, as they are inspired by the paper summaries done by <a href="https://fanpu.io/summaries/"> Fan Pu Zeng </a>, which are in turn inspired by <a href="https://www.cs.cmu.edu/~15712/summaries.html">this class at CMU</a>.
 
+{% include scripts/mathjax_macros.html %}
+
 ---
 
 <ol>
