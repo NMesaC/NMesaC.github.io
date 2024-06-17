@@ -12,7 +12,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website, Nicholas-Mesa-Cucalon, MultimodalML,Multimodal-Machine-Learning, Personalizable-AI, Generative-AI, GenerativeAI # add your own keywords or leave empty
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website, Nicholas-Mesa-Cucalon, MultimodalML, Multimodal-Machine-Learning, Personalizable-AI, Generative-AI, GenerativeAI # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: icon.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -30,7 +30,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -302,15 +302,15 @@ display_tags: ["machine-learning", "computer-science", "math", "games", "misc"] 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Mesa-Cucalon]
+  first_name: [Nicholas]
 
   style: apa
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
+  bibliography: summaries.bib
+  bibliography_template: custom_bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
@@ -320,6 +320,7 @@ scholar:
   join_strings: true
 
   details_dir: bibliography
+  details_layout: bibtex.html
   details_link: Details
 
   query: "@*"

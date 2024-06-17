@@ -1,10 +1,11 @@
 ---
 layout: summary
 title: "Grounding Language Models to Images for Multimodal Inputs and Outputs"
+giscus_comments: true
 bib_id: 2301.13823v4
 ---
 
-### Overview
+### Motivation
 
 In my investigations for Multimodal RAG, I realized that whatever a language transformer and visual transformer attend to should be the same. If they are vectors, they should be similar. This is true, but only if the modalities are the same. This implies that a sentence and image should be similar IFF they are in the same space. Some more research told me this is called "Grounding". This paper discusses this, and I'll provide a 3 sentence review after revising it.
 
@@ -14,7 +15,7 @@ We propose an efficient method to ground pretrained text-only language models to
 
 ### Three Important Points
 
-#### 1. The Need for Vision Data
+#### 1. The Need for Visual Inputs
 
 The authors note that current Large Language Models are grounded in the language modality, since they are trained on large corpuses of internet text data. However, this means that LLMs are unable to process multimodal data, such as audio or visual data, and are inherently limited in that respect. The authors note that visual data can be information rich and serve to ground LLMs in the real world and make them more effective than just being trained on internet text data. This paper focuses on the incorporation and interleaving of visual data into an pretrained LLM, with a focus on Image Captioning and Image Retrieval given a prompt. This approach is efficient and relevant since their architecture leverages existing visual models and LLM models by learning small weight matrices and embeddings for only a single new token, meaning that instead of training a large costly model, training is relatively fast and efficient.
 
