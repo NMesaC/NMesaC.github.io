@@ -1,0 +1,4 @@
+I could not get the altmetric button to function.
+
+If for some god forsaken reason someone wants to venture into the rabbit hole
+of trying to add it, I'd suggest just starting from Fan Pu Zeng' website and going forward.
