@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A Collection of Projects I have worked on!",
+          description: "A collection of projects I have worked on.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -23,54 +23,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-paper-summaries",
-          title: "Paper Summaries",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/summaries/";
-          },
         },{id: "nav-cv",
           title: "CV",
-          description: "My Resume as of 1/23/2025.",
+          description: "My Resume as of 6/1/2025.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-you-need-to-pay-better-attention-paper-discussion",
-      
-        title: '“You Need To Pay Better Attention” Paper Discussion <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://nmesac1019.medium.com/you-need-to-pay-better-attention-paper-discussion-49fb694f6881?source=rss-98801b91b38b------2", "_blank");
-        
-      },
-    },{id: "post-deepfakes-effective-solutions-for-rapidly-emerging-issues",
-      
-        title: 'Deepfakes: Effective Solutions for Rapidly Emerging Issues <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://medium.com/analytics-vidhya/deepfakes-effective-solutions-for-rapidly-emerging-issues-8b1685feef56?source=rss-98801b91b38b------2", "_blank");
-        
-      },
-    },{id: "post-esports-niche-pastime-to-fully-fledged-business-venture",
-      
-        title: 'Esports: Niche Pastime to Fully Fledged Business Venture <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.open("https://nmesac1019.medium.com/esports-niche-pastime-to-fully-fledged-business-venture-25d4af40d4e3?source=rss-98801b91b38b------2", "_blank");
-        
-      },
-    },{id: "news-a-simple-inline-announcement",
+        },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
@@ -86,8 +46,8 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_scizor_finetuning/";
-            },},{id: "projects-you-need-to-pay-better-attention",
-          title: 'You Need to Pay Better Attention',
+            },},{id: "projects-quot-you-need-to-pay-better-attention-quot-paper-discussion",
+          title: '&amp;quot;You Need to Pay Better Attention&amp;quot; Paper Discussion',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_pay_better_attention/";
