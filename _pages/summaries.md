@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /summaries/
 title: Paper Summaries
@@ -21,3 +21,4 @@ Summaries and critiques of papers relating to Machine Learning, usually Multimod
     </li>
     {% endfor %}
 </ol>
+ -->
