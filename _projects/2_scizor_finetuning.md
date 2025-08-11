@@ -6,8 +6,63 @@ importance: 1
 category: work
 related_publications: false
 ---
+<style>
+/* Base styling */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
 
-## Motivation
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+}
+h1 { color: #0055aa; }
+h2 { color: #0077cc; }
+h3 { color: #3399ff; }
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inline code */
+code {
+  background: rgba(27, 31, 35, 0.05);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+}
+
+/* Code blocks */
+pre {
+  background: rgba(27, 31, 35, 0.05);
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Callouts */
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  color: #555;
+  font-style: italic;
+}
+</style>
+
+### TL;DR
+We get hands-on experience with the FROMAGE VLM, and attempt to fine tune it to carry out conversations regarding a Pokemon: Scizor.
+
+# 2025 Foreword
+I originally completed this project in Summer 2024, coming fresh out of an Introduction to ML and Convex Optimization class. As a result, I was still quite inexperienced, both in the field, in carrying out my own projects and in reading research papers! Upon revisiting this project in Summer 2025, I realized that the paper explicitly mentions that Full Fine-Tuning can destroy the model's abilities. I had not noticed this originally, which explains why the results show degraded model outputs. If I were to redo this project, I would definitely use LoRA, or some other PEFT technique as to avoid these issues! Alternatively, we could explore In-Context learning with the FROMAGE model to assess its strengths and limitations.
+
+
+# Introduction
 One of the key objectives in current Machine Learning research is the desire to combine different modalities for a more unified representation concept. A model that can process and perform inference with both language and vision data will inevitably be far more powerful than what a language or vision model can do in a vacuum. This idea is called Grounding in the literature. Grounding is the idea of having a model being able to understand multiple representations of the same concept. Consider a pre-trained language model. The model might understand that an apple is a red fruit, but we want a model that can go further. We want a model that can also be able to process an image of an apple and recognize that the features of the image are the same features that, in natural language, are unique to an apple.
 It is clear why such a model would be useful, as you are in essence giving a large language model “eyes”. Claude 3.5 Sonnet and ChatGPT4-o have recently been able to accomplish this. They are able to process and discuss images when prompted to. Specifically, the vision capabilities of both these models are impressive. I prompted Claude with the question “Describe this character” on the image below, Claude provided an accurate description of the image that couldn’t have been mistaken for another character.
 
@@ -22,7 +77,7 @@ It is clear why such a model would be useful, as you are in essence giving a lar
 Furthermore, this model is definitely out of the scope of Claude’s training, as this image only became publicly available around early to mid June (the release date of the game the character was from), so being able to provide such an accurate natural language description of a novel image was amazing.
 Once I saw these capabilities, I became interested in understanding grounding more and seeing if I could replicate the results, albeit at a much smaller scale. I had already read and summarized the paper “Grounding Language models to Images for Multimodal Inputs and Outputs” and I figured that getting more experience working with the FROMAGE framework described in the paper would be good practice. I selected to finetune FROMAGE on Pokemon because I’m a big fan of the series and also I thought that Pokemon would give me good practice describing non standard objects in natural language.
 
-## Scope and Data
+# Scope and Data
 When I was scoping out this project, I originally wanted to choose a select number of the best Pokemon currently so that the model could identify them via image and then give me some information about them. However, I quickly realized upon searching that there are no robust datasets for this type of task with Pokemon. The best that exists is a kaggle dataset that contains each of the roughly 1000 Pokemon and a general description of the Pokemon. The issue is that there is only 1 image of each Pokemon, and it gives a general natural language description of each Pokemon, which is insufficient for what I wanted to do. I realized that I either would have to change what my dataset would be or I would have to make a smaller scale one for myself.
 I then decided that I needed to shift scope and decided to focus on a single Pokemon and make a small training dataset for it. I decided I would use Scizor, as I feel this Pokemon has distinctive enough features that would be easy for the model to reason about.
 
@@ -39,7 +94,7 @@ Another issue was with how I needed to annotate the data. It would defeat the po
 I learned an important lesson quickly with this project, and that's how necessary good, high quality data for Machine Learning models is at this scale. I only labeled about 70 images with natural language descriptions, so I only had a small amount of data to work with. I did this since I wanted to get to work with FROMAGE as soon as possible, so I made do with what data I had, though it did impact the results later.
 
 
-## Evaluation
+# Evaluation
 Once I was able to get FROMAGE to actually load the model and evaluate, I encountered something I suspected might happen from the web scraping phase. The model only had limited training data to learn from, and since I did not employ any other advanced techniques to supplement cases with few examples, the model performance was mediocre on most tasks related to Scizor specifically, as it still retained its capabilities from beforehand.
 The model is able to describe an image properly, but the reasoning we expect from LLM’s is not fully there with reference to Scizor. Of course, I am working on a much smaller scale than models like Claude or ChatGPT4-o, but I still expected slightly better results. I suspect that with more training data and more time, the model will be able to perform better on more complicated and less direct queries.
 <div style="text-align:center">
@@ -50,14 +105,14 @@ The model is able to describe an image properly, but the reasoning we expect fro
   %}
 </div>
 
-## Future Work
+# Future Work
 
 The fine tuning procedure worked in the sense that the model can actually recognize Scizor and answer basic queries, but it failed since the model cannot sustain a full conversation about Scizor as the original paper showed with a cat or a beaver as a prompt. I attribute this to the lack of data regarding Scizor in the Conceptual Captions style. I always learned in classes the necessity of good data for a Machine Learning model to actually perform effectively, but I experienced it first hand with this project.
 I feel that I learned some useful skills throughout this project. Firstly, I only have access to a Macbook Air, which definitely cannot perform training fast enough for this model nor can it fit the model in its RAM. I ended up getting familiar with the LambdaLabs GPU services, setting up environments on fresh Ubuntu installs and just getting comfortable with the product, which I know will be useful later on. I also learned about web scraping and parsing data from Serpapi, which will inevitably be useful when I do later projects in Multimodal contexts. Finally, working with FROMAGE helped me work with research code and debugging it in an ML context. I have done debugging of research code and reading through github and stackoverflow posts from my internship during Summer 2023, but doing it with pytorch instead was a new experience, and I’m grateful for that.
 In the future, I might revisit this project and either use an existing multimodal model to automate image captioning, expanding the existing Scizor dataset or using a different dataset all together. Regardless, I learned a lot and enjoyed working on this project, and the paper and this model have given me ideas for future projects!
 
 
-## Note: Procedures
+# Procedures
 Full details of the scripts I used to prepare the demo are available at <a href="https://github.com/NMesaC/fromage_finetuning_pokemon"> my github! </a>
 
 <div style="text-align:center">

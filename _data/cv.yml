@@ -27,10 +27,18 @@
 - title: Professional
   type: time_table
   contents:
+    - title: AI Software Intern
+      institution: REEP Equity
+      year: 2025 - Present
+      description:
+        - Built an end-to-end app with a web frontend and Flask/Python backend. Processed analyst CSV data and leveraged in-context learning with a fine tuned LLaMA-3.2 3B to generate summaries.
+        - Conducted A/B testing with clients comparing AI-generated and human-written summaries, demonstrating no significant preference and validating the prototype’s effectiveness.
+        - Scoping hardware and designing a ReactJS web interface with user authentication for an on-premises scalable solution. Planning Kubernetes orchestration to manage GPU workloads.
+
     - title: Undergraduate Teaching Assistant (17-200 Ethics and Policy Issues in Computing)
       institution: Carnegie Mellon University
       department: College of Engineering
-      year: Present
+      year: 2024 - Present
       description:
         - Moderated recitation discussions of over 70 undergraduate students to further discuss lecture material.
         - Provided constructive feedback and revision strategies for groups of 10 students for each assignment.
@@ -41,9 +49,9 @@
       department: College of Engineering
       year: 2024
       description:
-        - Investigated and read state of the art papers regarding token merging algorithms for Vision Models and KV-Caches for Language Models.
-        - Implemented the Heavy Hitter Oracle KV-Cache for the LLaVA Vision-Language Model by directly modifying the LLaMA backbone.
-        - Replicated vanilla LLaVA performance on TextVQA of 61.24\% using a KV-Cache 0.25x the size of LLaMA's context window.
+        - Performed literature review on state-of-the-art token merging algorithms for vision models and key–value cache optimization methods for language models.
+        - Implemented a Heavy Hitter Oracle KV-Cache in the LLaVA vision–language model by modifying the LLaMA backbone
+        - Matched vanilla LLaVA performance on TextVQA (61.24%) using only 25% of the original KV-Cache size, maintaining comparable inference speed.
 
     - title: Undergraduate Teaching Assistant (18-213 Introduction to Computer Systems)
       institution: Carnegie Mellon University
@@ -58,14 +66,14 @@
       institution: Voaige
       year: 2023
       description:
-        - Led development of and deployed production code for Delta Robot calibration with a team size of 8.
-        - Produced a program and documentation for Hand-Eye-Calibration for xArm7 Robot Arms, Intel RealSense Cameras and Zivid Cameras using OpenCV.
-        - Researched and documented 23 papers on various Point Cloud Registration for future work with the core product.
+        - Led development and deployment of production-grade Delta Robot Calibration system with an 8-member team
+        - Designed and documented a Hand–Eye Calibration solution for xArm7 robotic arms integrating Intel RealSense and Zivid cameras using OpenCV.
+        - Conducted a literature review of 23 academic papers on Point Cloud Registration to synthesize key methods for development of the core product.
 
     - title: Research Assistant - AirLab CMU
       institution: Carnegie Mellon University
       department: Robotics Institute
-      year: 2022 - 2023
+      year: 2022
       description:
         - Authored script to help generate novel test patterns for research.
         - Synthesized and devised action plan for novel Camera Models for fish eye lens.

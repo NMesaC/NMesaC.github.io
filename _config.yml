@@ -88,8 +88,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Nico's Blog # blog_name will be displayed in your blog page
-blog_description: A blog dedicated to thoughts and ideas in Machine Learning and general topics related to my interests.
+blog_name: The Signal # blog_name will be displayed in your blog page
+blog_description: A blog dedicated to some of my interests, paper summaries, and thoughts on Machine Learning.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -271,8 +271,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["Machine Learning", "Paper Summaries", "Math"] # these tags will be displayed on the front page of your blog
+# display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
