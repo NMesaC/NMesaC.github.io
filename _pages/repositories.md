@@ -45,3 +45,16 @@ nav_order: 4
   {% endfor %}
 </div>
 {% endif %}
+
+{% if site.data.repositories.contributed_repos %}
+
+---
+
+## Contributions
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.contributed_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}
